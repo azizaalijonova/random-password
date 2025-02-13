@@ -21,6 +21,10 @@ function generatePassword() {
   if (numbers.checked) selectedChars += numberChars;
   if (symbols.checked) selectedChars += symbolChars;
 
+  if (length.value === "") {
+    alert("❗️ Please choose the password length.");
+    return;
+  }
   if (selectedChars === "") {
     alert("❗️ Please select at least one character type.");
     return;
