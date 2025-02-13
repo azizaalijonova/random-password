@@ -22,7 +22,7 @@ function generatePassword() {
   if (symbols.checked) selectedChars += symbolChars;
 
   if (selectedChars === "") {
-    alert("Please select at least one character type.");
+    alert("❗️ Please select at least one character type.");
     return;
   }
 
@@ -43,5 +43,5 @@ btn.addEventListener("click", generatePassword);
 
 copy.addEventListener("click", () => {
   navigator.clipboard.writeText(input.value);
-  alert("buferga olindi");
+  alert("Password copied ✅");
 });
